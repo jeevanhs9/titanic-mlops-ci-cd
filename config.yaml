@@ -1,0 +1,18 @@
+data:
+  path: "data/titanic.csv"
+  target: "Survived"
+
+training:
+  test_size: 0.2
+  random_state: 42
+
+model:
+  type: "RandomForestClassifier"
+  params:
+    n_estimators: 200
+    max_depth: 6
+    random_state: 42
+
+paths:
+  model_dir: "models"
+  latest_model: "models/latest_model.pkl"
